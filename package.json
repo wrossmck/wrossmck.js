@@ -1,0 +1,30 @@
+{
+  "name": "wrossmck.js",
+  "version": "0.1.0",
+  "description": "A Twitter Bot that sounds like @wrossmck",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wrossmck/wrossmck.js.git"
+  },
+  "keywords": [
+    "twitter",
+    "node",
+    "bot",
+    "robot",
+    "markov"
+  ],
+  "author": "wrossmck",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wrossmck/wrossmck.js/issues"
+  },
+  "homepage": "https://github.com/wrossmck/wrossmck.js",
+  "dependencies": {
+    "markov": "https://github.com/substack/node-markov/archive/0.0.7.tar.gz",
+    "ntwitter": "^0.5.0"
+  }
+}

@@ -19,17 +19,17 @@ m.seed(s, function () {
 		res = res.replace(/[\u0250-\ue007]/g, '');//removes some strange characters
 		console.log(res);
 		// send req to twitter
-		twit.verifyCredentials(function (err, data) {
-			if(err){console.log(err);}
-			// console.log(data);
-		});
-		//uncommnet to acually post
-		// .updateStatus(res,
-		// 	function (err, data) {
-		// 	if(err){console.log(err);}
-		// 		// console.log(data);
-		// 	}
-		// );
+		if(res.trim()!==""){
+			twit.verifyCredentials(function (err, data) {
+				if(err){console.log(err);}
+				// console.log(data);
+			}).updateStatus(res,
+				function (err, data) {
+				if(err){console.log(err);}
+					// console.log(data);
+				}
+			);
+		}
 	util.print('> ');
 	});
 });

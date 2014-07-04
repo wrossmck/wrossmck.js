@@ -21,3 +21,8 @@ Add your plain text markov generator content to `text.txt`. For example:
 	This is my next.
 	There are no more examples.
 ```
+
+## Usage Directions
+
+* run `npm start`
+* type some initial text to invoke a response `> Hello`

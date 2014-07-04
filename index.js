@@ -19,7 +19,7 @@ m.seed(s, function () {
 		var res = m.respond(line.toString()).join(' ');
 		res = res.replace(/[\u0250-\ue007]/g, '');//removes some strange characters
 		console.log("[Response ]"+res);
-		if(res.length() > 140){
+		if(res.length >= 140){
 			res = res.substring(0,140);// truncates to 140 characters
 			console.log("[Truncated] "+res);
 		}
